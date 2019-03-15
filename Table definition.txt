@@ -1,0 +1,11 @@
+CREATE TABLE `english_dictionary` (
+  `word_id` int(11) NOT NULL AUTO_INCREMENT,
+  `partitioning_id` tinyint(4) NOT NULL,
+  `word` varchar(35) NOT NULL,
+  `part_of_speech` varchar(100) DEFAULT NULL,
+  `meaning` text NOT NULL,
+  PRIMARY KEY (`word_id`,`partitioning_id`),
+  KEY `word` (`word`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8
+PARTITION BY HASH (partitioning_id)
+PARTITIONS 26;
