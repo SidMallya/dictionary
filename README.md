@@ -1,7 +1,7 @@
 # dictionary
 A simple dynamic online dictionary created using PHP, AJAX and MySQL.
 
-Prerequistes:
+Prerequisites:
 
 1) The code used here requires below set up in MySQL:  
 
